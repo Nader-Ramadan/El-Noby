@@ -325,7 +325,7 @@
 /* ########################## Section 8 ########################## */
 .section8 {
     grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
-    background: url(/IMGs/Photos/Image\ 15.png) no-repeat;
+    background: url(../IMGs/Photos/Image\ 15.png) no-repeat;
     background-size: cover;
     background-position: center center;
     color: var(--white);
