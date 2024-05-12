@@ -1,3 +1,18 @@
+let links = [
+    "../index.html",
+    "../Shopping/shopping.html",
+    "./about-us.html",
+    "../Contact us/contact-us.html"
+]
+let navButtons = document.querySelectorAll("header nav ul li")
+
+navButtons.forEach((link, index) => {
+    link.addEventListener('click', () => {
+        window.location.href = links[index]
+    })
+})
+
+
 let wraper = document.querySelector(".section2 .img-wraper1")
 let buttonLeft = document.querySelector(".section2 .arrow-left")
 let buttonRight = document.querySelector(".section2 .arrow-right")
