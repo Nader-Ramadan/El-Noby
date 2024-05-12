@@ -1,0 +1,363 @@
+/* ########################## Section 1 ########################## */
+.section1 {
+    grid-template-rows: 1fr 1fr 12fr 1fr;
+}
+
+.section1 h2 {
+    font-size: 2.5em;
+    grid-area: 2 / 2 / 1 span / 10 span;
+}
+
+.section1 .img-wraper1 {
+    grid-area: 3 / 2 / 1 span / 10 span;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 .img-wraper1 .img-wraper2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.section1 .img-wraper1 .img-wraper2 img {
+    border-radius: 1em;
+}
+
+.section1 .img-wraper1 .img-wraper2 .info-wraper1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section1 .img-wraper1 .img-wraper2 .info-wraper1 h4 {
+    font-size: 1.75em;
+}
+
+.section1 .img-wraper1 .img-wraper2 .info-wraper1 span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.section1 .img-wraper1 .img-wraper2 .top-ranking {
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+}
+
+.section1 .img-wraper1 .img-wraper2 .top-ranking .img-wraper3 {
+    display: flex;
+    gap: 1.5em;
+}
+
+.section1 .img-wraper1 .img-wraper2 .new-arrivals {
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+}
+
+.section1 .img-wraper1 .img-wraper2 .new-arrivals .img-wraper3 {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.section1 .img-wraper1 .img-wraper2 .new-arrivals .img-wraper4 {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.section1 .img-wraper1 .img-wraper2 .new-arrivals .img-wraper4 .info-wraper2 h5 {
+    font-size: 1.5em;
+}
+
+.section1 .img-wraper1 .img-wraper2 .savings-spotlight {
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+}
+
+.section1 .img-wraper1 .img-wraper2 .savings-spotlight .img-wraper3 {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.section1 .img-wraper1 .img-wraper2 .savings-spotlight h5 {
+    font-size: 1.5em;
+}
+
+/* ########################## Section 2 ########################## */
+.section2 {
+    grid-template-rows: 1fr 1fr 8fr 1fr;
+}
+
+.section2 img {
+    border-radius: 1em;
+}
+
+.section2 h2 {
+    grid-area: 2 / 2 / 1 span / 10 span;
+    font-size: 2.5em;
+}
+
+.section2 .img-wraper1 {
+    grid-area: 3 / 2 / 1 span / 10 span;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.section2 .img-wraper1 .img-wraper2 {
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+}
+
+.section2 .img-wraper1 .img-wraper2 .img-wraper3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5em;
+}
+
+.section2 .img-wraper1 .img-wraper2 .img-wraper3 img {
+    width: 100%;
+}
+
+.section2 .img-wraper1 .img-wraper2 .img-wraper4 {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.section2 .img-wraper1 .img-wraper2 .img-wraper4 .info-wraper1 h5 {
+    font-size: 1.5em;
+}
+
+/* ########################## Section 3 ########################## */
+.section3 {
+    grid-template-rows: 1fr 1fr 10fr 1fr;
+}
+
+.section3 img {
+    border-radius: 1em;
+}
+
+.section3 h2 {
+    grid-area: 2 / 2 / 1 span / 10 span;
+    font-size: 2.5em;
+}
+
+.section3 .img-wraper1 {
+    grid-area: 3 / 2 / 1 span / 10 span;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section3 .img-wraper1 .img-wraper2 {
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+}
+
+.section3 .img-wraper1 .img-wraper2 .img-wraper3 {
+    display: flex;
+    gap: 1.5em;
+}
+
+/* ########################## Section 4 ########################## */
+.section4 {
+    grid-template-rows: 1fr 1fr 20fr 1fr;
+}
+
+.section4 h2 {
+    grid-area: 2 / 2 / 1 span / 10 span;
+    font-size: 2.5em;
+}
+
+.section4 .img-wraper1 {
+    grid-area: 3 / 2 / 1 span / 10 span;
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+}
+
+.section4 .img-wraper1 .img-wraper2 {
+    display: flex;
+    gap: 1.5em;
+}
+
+.section4 .img-wraper1 .img-wraper2 .img-wraper3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 1.5em;
+    background: var(--color7);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.section4 .img-wraper1 .img-wraper2 .img-wraper3 img {
+    background: linear-gradient(90deg, var(--color6), var(--color7), var(--color6));
+    border-radius: 1em;
+}
+
+.section4 .img-wraper1 .img-wraper2 .img-wraper3 p {
+    font-size: 0.75em;
+    padding: 1em;
+    background: var(--color8);
+    border-radius: 1em;
+}
+
+/* ########################## Section 5 ########################## */
+.section5 {
+    grid-template-rows: 1fr 1fr 12fr 1fr;
+}
+
+.section5 h2 {
+    grid-area: 2 / 2 / 1 span / 10 span;
+    font-size: 2.5em;
+}
+
+.section5 .img-wraper1 {
+    grid-area: 3 / 2 / 1 span / 10 span;
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+}
+
+.section5 .img-wraper1 .img-wraper2 {
+    display: flex;
+    gap: 1.5em;
+}
+
+.section5 .img-wraper1 .img-wraper2 .img-wraper3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 1.5em;
+    background: var(--color7);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.section5 .img-wraper1 .img-wraper2 .img-wraper3 img {
+    background: linear-gradient(90deg, var(--color6), var(--color7), var(--color6));
+    border-radius: 1em;
+}
+
+.section5 .img-wraper1 .img-wraper2 .img-wraper3 p {
+    background: var(--color8);
+    padding: 1em;
+    border-radius: 1em;
+    font-size: 0.75em;
+}
+
+/* ########################## Section 6 ########################## */
+.section6 {
+    grid-template-rows: 1fr 1fr 22fr 1fr;
+}
+
+.section6 h2 {
+    grid-area: 2 / 2 / 1 span / 10 span;
+    font-size: 2.5em;
+}
+
+.section6 .img-wraper1 {
+    grid-area: 3 / 2 / 1 span / 10 span;
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+}
+
+.section6 .img-wraper1 .img-wraper2 {
+    display: flex;
+    gap: 1.5em;
+}
+
+.section6 .img-wraper1 .img-wraper2 .img-wraper3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 1.5em;
+    border-radius: 1em;
+    padding: 0.5em;
+    background: var(--color7);
+}
+
+.section6 .img-wraper1 .img-wraper2 .img-wraper3 img {
+    background: linear-gradient(90deg, var(--color6), var(--color7), var(--color6));
+    border-radius: 1em;
+    width: 100%;
+}
+
+.section6 .img-wraper1 .img-wraper2 .img-wraper3 img:nth-child(1) {
+    grid-area: 1 / 1 / 1 span / 2 span;
+}
+
+/* ########################## Section 7 ########################## */
+.section7 {
+    grid-template-rows: auto 1fr 1fr auto;
+}
+
+.section7 h2 {
+    grid-area: 1 / 2 / 1 span / 10 span;
+    font-size: 2.5em;
+    font-weight: 800;
+    padding: 0.5em 0;
+}
+
+.section7 .img-wraper1 {
+    grid-area: 2 / 2 / 2 span / 10 span;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25em;
+}
+
+.section7 .img-wraper1 img {
+    border-radius: 1rem;
+}
+
+/* ########################## Section 8 ########################## */
+.section8 {
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    background: url(/IMGs/Photos/Image\ 15.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: var(--white);
+}
+
+.section8 h1 {
+    grid-area: 2 / 2 / 1 span / 5 span;
+    font-size: 3.25em;
+}
+
+.section8>div {
+    padding: 3em;
+    border-radius: 1.25rem;
+    backdrop-filter: blur(3em);
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 1.25em;
+}
+
+.section8 .info-wraper1 {
+    grid-area: 3 / 2 / 1 span / 5 span;
+}
+
+.section8 .info-wraper2 {
+    grid-area: 3 / 7 / 1 span / 5 span;
+}
+
+.section8>div h4 {
+    font-size: 1.5em;
+}
+
+.section8>div p {
+    font-size: 1.25em;
+}

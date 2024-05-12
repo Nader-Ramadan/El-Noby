@@ -1,0 +1,58 @@
+.section1 {
+    grid-template-rows: 0.5fr 3fr 1fr 0.5fr;
+    margin: 2em 0;
+}
+.section1 form {
+    grid-area: 2 / 2 / 1 span / 5 span;
+    display: flex;
+    flex-flow: column;
+    gap: 1.25em;
+}
+.section1 form > div {
+    display: flex;
+    gap: 1.25em;
+}
+.section1 form > div input {
+    width: -webkit-fill-available;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    background: var(--color7);
+    color: var(--black);
+}
+.section1 form > div input::placeholder {
+    font-weight: 800;
+    color: var(--black);
+    font-size: 1.25rem;
+}
+.section1 form textarea {
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    background: var(--color7);
+    color: var(--black);
+}
+.section1 form textarea::placeholder{
+    color: var(--black);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.section1 iframe {
+    grid-area: 2 / 8 / 1 span / 4 span;
+}
+.section1 .info-wraper1 {
+    grid-area: 3 / 2 / 1 span / 10 span;
+    background: linear-gradient(90deg, var(--color7), var(--color6));
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    align-items: center;
+    font-size: 1.5em;
+}
+.section1 .info-wraper1 span {
+    display: flex;
+    align-items: center;
+    gap: 1.25em;
+}

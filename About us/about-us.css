@@ -1,0 +1,130 @@
+/* ###################### Section 1 ###################### */
+.section1 {
+    background: var(--color7);
+}
+.section1 h2 {
+    grid-area: 2 / 2 / 2 span / 10 span;
+    font-size: 3em;
+    text-align: center;
+}
+/* ###################### Section 2 ###################### */
+.section2 {
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+.section2 .arrow-left {
+    grid-area: 2 / 2 / 2 span / 1 span;
+    border-radius: 10rem 0 0 10rem;
+    background: none;
+    border: 1px solid var(--color7);
+    padding: 1em;
+    cursor: pointer;
+}
+.section2 .img-wraper1 {
+    display: flex;
+    grid-area: 2 / 3 / 2 span / 8 span;
+    gap: 1.25em;
+    box-sizing: content-box;
+    overflow-x: overlay;
+}
+.section2 .img-wraper1 .img-wrpaer2 {
+    display: flex;
+    flex-flow: column;
+    gap: 1.25em;
+    background: var(--color7);
+    padding: 2em 1.25em;
+    border-radius: 1em;
+    min-width: 19em;
+}
+.section2 .img-wraper1 .img-wrpaer2 h3 {
+    font-size: 3em;
+}
+.section2 .img-wraper1 .img-wrpaer2 p {
+    font-size: 1.25em;
+    background: var(--white);
+    padding: 0.25em 0.5em;
+    border-radius: 0.5em;
+}
+.section2 .arrow-right{
+    grid-area: 2 / 11 / 2 span / 1 span;
+    border-radius: 0 10rem 10rem 0;
+    background: none;
+    padding: 1em;
+    border: 1px solid var(--color7);
+    cursor: pointer;
+}
+.section2 .arrow-left:hover, .section2 .arrow-right:hover {
+    transition: 0.25s;
+    background: var(--color7);
+}
+/* ###################### Section 3 ###################### */
+.section3 {
+    grid-template-rows: 1fr 8fr 2fr 8fr 1fr;
+    gap: 1.25em;
+    align-items: center;
+    text-align: center;
+}
+.section3 .info-wraper1 {
+    grid-area: 2 / 2 / 1 span / 10 span;
+    border-radius: 7.5em 1em 7.5em 1em;
+}
+.section3 .info-wraper2 {
+    grid-area: 3 / 2 / 1 span / 10 span;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 1.25em;
+    background: var(--color7);
+    border-radius: 1em;
+}
+.section3 .info-wraper3 {
+    grid-area: 4 / 2 / 1 span / 10 span;
+    border-radius: 1em 7.5em 1em 7.5em;
+}
+.section3 .info-wraper1, .section3 .info-wraper3 {
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.25em;
+    background: var(--color7);
+}
+.section3 .info-wraper1 p, .section3 .info-wraper3 p {
+    grid-area: 2 / 2 / 1 span / 10 span;
+}
+.section3 .info-wraper2 p {
+    grid-area: 2 / 2 / 1 span / 10 span;
+}
+/* ###################### Section 4 ###################### */
+.section4 {
+    grid-template-rows: 8fr 1fr 8fr 1fr;
+    gap: 1.25em;
+}
+.section4 .img-wraper1 {
+    grid-area: 1 / 2 / 1 span / 4 span;
+    background: linear-gradient(90deg, var(--color7), var(--color6));
+}
+.section4 .info-wraper1 {
+    grid-area: 1 / 6 / 1 span / 6 span;
+    border-radius: 0 1em 7.5em 0;
+}
+.section4 .img-wraper2 {
+    grid-area: 3 / 8 / 1 span / 4 span;
+    background: linear-gradient(-90deg, var(--color7), var(--color6));
+}
+.section4 .info-wraper2 {
+    grid-area: 3 / 2 / 1 span / 6 span;
+    border-radius: 1em 0 0 7.5em;
+}
+.section4 .info-wraper1, .section4 .info-wraper2 {
+    display: flex;
+    flex-flow: column;
+    gap: 1.25em;
+    padding: 2em 2.5em 7em;
+    background: var(--color7);
+}
+.section4 h2 {
+    font-size: 5.5em;
+}
+.section4 p {
+    font-size: 2.5em;
+}
