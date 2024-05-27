@@ -6,19 +6,23 @@
     grid-area: 2 / 2 / 1 span / 5 span;
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    padding: 1.5em;
+    border-radius: 1em;
     gap: 1.25em;
+    background: linear-gradient(90deg, var(--linear1));
 }
 .section1 form > div {
     display: flex;
     gap: 1.25em;
 }
 .section1 form > div input {
-    width: -webkit-fill-available;
+    width: calc((100% - 0em) / 2);
     font-size: 1.5rem;
     border-radius: 1rem;
     padding: 1rem;
     border: none;
-    background: var(--color7);
+    background: var(--white);
     color: var(--black);
 }
 .section1 form > div input::placeholder {
@@ -31,7 +35,7 @@
     border-radius: 1rem;
     padding: 1rem;
     border: none;
-    background: var(--color7);
+    background: var(--white);
     color: var(--black);
 }
 .section1 form textarea::placeholder{
@@ -41,18 +45,52 @@
 }
 .section1 iframe {
     grid-area: 2 / 8 / 1 span / 4 span;
+    width: 100%;
 }
 .section1 .info-wraper1 {
     grid-area: 3 / 2 / 1 span / 10 span;
-    background: linear-gradient(90deg, var(--color7), var(--color6));
+    background: linear-gradient(-45deg, var(--linear1));
+    color: var(--white);
     display: flex;
     justify-content: space-between;
+    text-wrap: nowrap;
     padding: 2em;
     align-items: center;
     font-size: 1.5em;
+    border-radius: 1em;
 }
 .section1 .info-wraper1 span {
     display: flex;
     align-items: center;
     gap: 1.25em;
+    backdrop-filter: brightness(0.6);
+    padding: 0.5em;
+    border-radius: 1em;
+}
+@media screen and (max-width: 430px) {
+    .section1 {
+        grid-template-rows: 0.5fr 2fr 2fr 1fr 0.5fr;
+    }
+    .section1 iframe {
+        grid-area: 2 / 2 / 1 span / 10 span;
+    }
+    .section1 form {
+        grid-area: 3 / 2 / 1 span / 10 span;
+    }
+    .section1 form > div input {
+        width: 100%;
+    }
+    .section1 form > div {
+        flex-flow: column;
+    }
+    .section1 .info-wraper1 {
+        grid-area: 4 / 2 / 1 span / 10 span;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5em;
+    }
+    .section1 .info-wraper1 span {
+        justify-content: space-between;
+    }
 }

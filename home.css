@@ -49,6 +49,7 @@ main {
 .section1 .search-bar .attach {
     grid-area: 1 / 10 / 1 span / 1 span;
     cursor: pointer;
+    display: flex;
     justify-self: center;
 }
 .section1 .search-bar .submit {
@@ -167,6 +168,10 @@ main {
 .section3 .gallary-wraper .top-ranking .img-wrap2 {
     display: flex;
     justify-content: space-between;
+    gap: 1.5em;
+}
+.section3 .gallary-wraper .top-ranking .img-wrap2 img {
+    width: calc(100% / 3.5);
 }
 .section3 .gallary-wraper .top-ranking .slider {
     display: flex;
@@ -211,6 +216,7 @@ main {
 .section3 .gallary-wraper .savings-spotlights .img-wraper1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5em;
 }
 .section3 .gallary-wraper .savings-spotlights .img-wraper1 img {
     grid-area: 1 / 1 / 1 span / 1 span;
@@ -368,6 +374,11 @@ main {
     margin: auto;
     padding: 1em 3em;
 }
+.section8 button:hover {
+    transition: 0.5s;
+    filter: brightness(80%);
+    scale: 1.1;
+}
 /* ########################## Section 9 ########################## */
 .section9 {
     grid-template-rows: 0.5fr 1fr 1fr;
@@ -438,4 +449,92 @@ main {
 }
 .section9 .img-wraper1 .img-wraper4 p {
     color: var(--color3);
+}
+@media screen and (max-width: 430px) {
+    .section1 .content1 {
+        grid-area: 2 / 2 / 2 span / 10 span;
+    }
+    .section2 {
+        grid-template-rows: 1fr 1fr 1fr auto 1fr;
+    }
+    .section2 h1 {
+        grid-area: 2 / 2 / 1 span / 10 span;
+    }
+    .section2 .stat-wrap {
+        grid-area: 3 / 2 / 1 span / 10 span;
+    }
+    .section2 .cat-wraper {
+        grid-area: 4 / 2 / 1 span / 10 span;
+        flex-flow: row wrap;
+        gap: 3.5em;
+    }
+    .section2 .cat-wraper .cat {
+        width: 126px;
+        height: 126px;
+        max-width: none;
+        max-height: none;
+        padding: 3.9em 0;
+    }
+    .section2 .cat-wraper .cat img {
+        width: 32px;
+        height: 32px;
+    }
+    .section3 .gallary-wraper {
+        flex-flow: column;
+    }
+    .section4 .img-wraper1 {
+        flex-flow: column;
+    }
+    .section5 {
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .section5 h1 {
+        grid-area: 2 / 2 / 1 span / 10 span;
+    }
+    .section5 .info-wraper1 {
+        grid-area: 3 / 2 / 1 span / 10 span;
+    }
+    .section5 .info-wraper2 {
+        grid-area: 4 / 2 / 1 span / 10 span;
+    }
+    .section6 h1 {
+        grid-area: 2 / 2 / 1 span / 10 span;
+    }
+    .section6 .info-wraprer1 {
+        flex-flow: column-reverse;
+    }
+    .section6 .info-wraprer1 .info-wraper2 .info-wraper3 {
+        gap: 0;
+    }
+    .section6 .info-wraprer1 .info-wraper2 img {
+        width: 75%;
+    }
+    .section7 h1 {
+        grid-area: 2 / 2 / 1 span / 10 span;
+    }
+    .section7 p {
+        grid-area: 3 / 2 / 1 span / 10 span;
+    }
+    .section8 .info-wraper1 {
+        grid-area: 2 / 2 / 1 span / 10 span;
+    }
+    .section8 button {
+        grid-area: 3 / 5 / 1 span / 4 span;
+    }
+    .section9 .info-wraper1 {
+        grid-area: 1 / 2 / 1 span / 10 span;
+        text-align: left;
+    }
+    .section9 .img-wraper1 {
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .section9 .img-wraper1 .img-wraper2 {
+        grid-area: 1 / 1 / 2 span / 12 span;
+    }
+    .section9 .img-wraper1 .img-wraper3 {
+        grid-area: 3 / 1 / 1w span / 12 span;
+    }
+    .section9 .img-wraper1 .img-wraper4 {
+        grid-area: 4 / 1 / 1 span / 12 span;
+    }
 }
